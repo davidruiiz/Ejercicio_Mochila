@@ -10,4 +10,4 @@ if __name__ == '__main__':
     objectos.sort(key=lambda x: x[3], reverse=True)
     port_term = mochila_pokemon(objectos, cap_max,peso_max)
     print("La mochila tiene una capacidad de: ", cap_max)
-    print(port_term)
+    print("Lista de pokemon en la mochila: ", port_term[0])

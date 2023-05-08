@@ -9,7 +9,6 @@ df['beneficio'] = (df['base_total'] / df['base_total'].max())
 df.drop_duplicates(subset = ['abilities'] or ['type_1'] and['type_2'], keep = 'last', inplace = True)
 columns_1 = ['name','beneficio','peso']
 df_3=df[columns_1]
-df_3.fillna(0, inplace=True)
 df_3.to_csv('../mochila/pokemon_no_normalizar.csv', index=False)
 a = df_3['peso'] > 0
 df_3 = df_3[a]
